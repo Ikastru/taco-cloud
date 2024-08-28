@@ -3,6 +3,7 @@ package com.example.taco_cloud.entity;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @Data
 public class Taco {
+    @Id
     private Long id;
 
     private Date createdAt = new Date();
